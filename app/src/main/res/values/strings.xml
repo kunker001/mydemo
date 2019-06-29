@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">报修系统</string>
+    <string name="title_activity_repair_man">RepairManActivity</string>
+    <string name="title_activity_user_man">UserManActivity</string>
+    <string name="title_activity_watch">WatchActivity</string>
+    <array name="areas">
+        <item>公寓区</item>
+        <item>图文楼</item>
+        <item>教学楼</item>
+        <item>工训楼</item>
+        <item>后勤综合楼</item>
+        <item>专业教学楼</item>
+        <item>文体中心</item>
+        <item>其他</item>
+        <item>留学生公寓</item>
+        <item>室外公共设施</item>20
+        <item>绿化卫生</item>30
+        <item>食堂</item>40
+    </array>
+    <string name="title_activity_new_repair">NewRepairActivity</string>
+    <string name="telnumber_only_error_message">不合法手机号！</string>
+
+    <string name="telnumber_only">^1[3456789]\\d{9}$</string>
+    <string name="title_activity_set_actitivity">SetActitivity</string>
+    <string name="title_activity_upload_img">UploadImgActivity</string>
+</resources>

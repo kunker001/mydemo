@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/colorPrimary"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/Menu_main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Menu_main_institute"
+        android:layout_marginBottom="10dp"
+        android:text="Sherry,欢迎你"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Menu_main_institute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="信息学院"
+        android:textColor="#FFF"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Menu_main_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/Menu_main_institute"
+        android:layout_marginLeft="50dp"
+        android:text="物联网应用技术"
+        android:textColor="#FFF"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

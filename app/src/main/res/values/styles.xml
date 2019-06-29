@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- 拓展主题 theme. -->
+    <style name="XUITheme" parent="XUIBaseTheme">
+        <!--设置默认窗口的动画样式-->
+
+        <!--自定义标题栏样式方法1-->
+        <!--<item name="xui_actionbar_color">@color/app_color_theme_1</item>-->
+        <!--<item name="xui_actionbar_text_color">@color/xui_config_color_primary_text</item>-->
+        <!--<item name="xui_actionbar_immersive">true</item>-->
+
+        <!--自定义标题栏样式方法2-->
+        <!--<item name="TitleBarStyle">@style/TitleBar.Custom</item>-->
+    </style>
+
+    <!--<style name="TitleBar.Custom">-->
+    <!--<item name="tb_titleTextColor">@color/xui_config_color_primary_text</item>-->
+    <!--<item name="tb_immersive">true</item>-->
+    <!--</style>-->
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">@color/dark_orange</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+</resources>

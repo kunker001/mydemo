@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NewRepairActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="报修内容描述*" />
+
+            <com.xuexiang.xui.widget.edittext.MultiLineEditText
+                android:id="@+id/n_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:text="区域*" />
+            <com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner
+                style="@style/Material.SpinnerStyle"
+                android:id="@+id/n_area"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                app:ms_entries="@array/areas"/>
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:text="详细地址*" />
+            <com.xuexiang.xui.widget.edittext.ClearEditText
+                android:id="@+id/n_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="联系方式*" />
+            <com.xuexiang.xui.widget.edittext.ClearEditText
+                android:id="@+id/n_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:text="备注" />
+            <com.xuexiang.xui.widget.edittext.MultiLineEditText
+                android:id="@+id/n_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+            </com.xuexiang.xui.widget.edittext.MultiLineEditText>
+            <com.xuexiang.xui.widget.button.ButtonView
+                style="@style/ButtonView.Blue"
+                android:id="@+id/n_sub"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
