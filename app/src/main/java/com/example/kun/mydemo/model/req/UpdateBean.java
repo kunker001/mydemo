@@ -7,6 +7,10 @@ public class UpdateBean {
     private String area;
     private String telephone;
     private String content ;
+    private String isEvaluate ;
+    private String is_vaild;
+    private String repair_status ;
+    private int repairmanId ;
 
     public UpdateBean(String content , String address, int id, String area, String telephone) {
         this.address = address;
@@ -16,6 +20,18 @@ public class UpdateBean {
         this.content = content ;
     }
 
+
+    public UpdateBean(String address, int id, String area, String telephone, String content, String isEvaluate, String is_vaild, String repair_status, int repairmanId) {
+        this.address = address;
+        this.id = id;
+        this.area = area;
+        this.telephone = telephone;
+        this.content = content;
+        this.isEvaluate = isEvaluate;
+        this.is_vaild = is_vaild;
+        this.repair_status = repair_status;
+        this.repairmanId = repairmanId;
+    }
 
     public String getAddress() {
         return address;
@@ -55,5 +71,37 @@ public class UpdateBean {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getIsEvaluate() {
+        return isEvaluate;
+    }
+
+    public void setIsEvaluate(String isEvaluate) {
+        this.isEvaluate = isEvaluate;
+    }
+
+    public String getIs_vaild() {
+        return is_vaild;
+    }
+
+    public void setIs_vaild(String is_vaild) {
+        this.is_vaild = is_vaild;
+    }
+
+    public String getRepair_status() {
+        return repair_status;
+    }
+
+    public void setRepair_status(String repair_status) {
+        this.repair_status = repair_status;
+    }
+
+    public int getRepairmanId() {
+        return repairmanId;
+    }
+
+    public void setRepairmanId(int repairmanId) {
+        this.repairmanId = repairmanId;
     }
 }
